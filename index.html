@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>M&E Tools Việt Nam</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>M&E Tools Việt Nam</h1>
+
+<h2>1. Tính dòng điện & CB</h2>
+<input id="kw" type="number" placeholder="Công suất (kW)">
+<button onclick="calcCB()">Tính</button>
+<p id="cbResult"></p>
+
+<h2>2. Chia tải 3 pha</h2>
+<textarea id="loads" rows="6" cols="50" placeholder="Nhập công suất từng tải, mỗi dòng một giá trị W"></textarea><br>
+<button onclick="balance()">Chia tải</button>
+<pre id="phaseResult"></pre>
+
+<h2>3. Thư viện tiêu chuẩn</h2>
+<ul>
+<li>TCVN 9206</li>
+<li>IEC 60364</li>
+<li>TCVN 7447</li>
+</ul>
+
+<script src="script.js"></script>
+</body>
+</html>
